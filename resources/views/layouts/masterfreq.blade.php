@@ -2,5 +2,5 @@
 @include('sweetalert::alert')
 @include('layouts.navbar')
 @include('layouts.sidebar')
-@include('layouts.main')
+@include('layouts.mainFreq')
 @include('layouts.footer')

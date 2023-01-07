@@ -15,6 +15,8 @@ use App\Http\Controllers\ScoreController;
 */
 
 Route::resource('score', ScoreController::class);
+Route::post('importFile', [ScoreController::class, 'importExcel'])->name('importFile');
+Route::get('/scoreFreq', [ScoreController::class, 'scoreFreq'])->name('scoreFreq');
 Route::get('/welcome', function () {
     return view('welcome');
 });
